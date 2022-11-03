@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ui>
+  <Layer Name="layWorld" Show="true">
+    <Form Active="false" BackgroundColor="#8F000000" Inherit="NoTitleBarForm" Location="10,662,364,160" Name="frMove" Pick="false" Show="fals" Size="364,160">
+      <Form Inherit="NoTitleBarForm" Location="3,6,30,148" Name="frChaButtonList" Show="true" Size="30,152">
+        <Button Inherit="" Location="3,25,21,20" Name="btUp" Show="true">
+          <NormalImage Blend="true" File="tz_010" Source="39,421,21,20"/>
+          <PushedImage Blend="true" File="tz_010" Source="242,484,21,20"/>
+          <Hint Text="$L:246$"/>
+        </Button>
+        <Button Inherit="" Location="3,46,21,20" Name="btDown" Show="true">
+          <NormalImage Blend="true" File="tz_010" Source="7,421,21,20"/>
+          <PushedImage Blend="true" File="tz_010" Source="276,484,21,20"/>
+          <Hint Text="$L:247$"/>
+        </Button>
+        <Button Inherit="" Location="3,67,21,20" Name="btAdd" Show="true">
+          <NormalImage Blend="true" File="tz_010" Source="6,484,21,20"/>
+          <PushedImage Blend="true" File="tz_010" Source="142,484,21,20"/>
+          <Hint Text="$L:248$"/>
+        </Button>
+        <Button Inherit="" Location="3,88,21,20" Name="btReduce" Show="true">
+          <NormalImage Blend="true" File="tz_010" Source="7,454,21,20"/>
+          <PushedImage Blend="true" File="tz_010" Source="175,484,21,20"/>
+          <Hint Text="$L:249$"/>
+        </Button>
+        <Button Inherit="" Location="3,109,21,20" Name="btChannel" Show="true">
+          <NormalImage Blend="true" File="tz_010" Source="71,454,21,20"/>
+          <PushedImage Blend="true" File="tz_010" Source="71,484,21,20"/>
+          <Hint Text="$L:250$"/>
+        </Button>
+        <Button Inherit="" Location="3,130,21,20" Name="btRoll" Show="true">
+          <NormalImage Blend="true" File="tz_010" Source="71,421,21,20"/>
+          <PushedImage Blend="true" File="tz_010" Source="209,484,21,20"/>
+          <Hint Text="$L:251$"/>
+        </Button>
+        <Anchors>
+          <Anchor offset="0,-5" point="BOTTOM"/>
+          <Anchor offset="3,0" point="LEFT"/>
+        </Anchors>
+        <Button BackgroundColor="#8f000000" Inherit="" Location="3,4,21,20" Name="btMove" Show="true" Size="60,24" Text="">
+          <Anchors>
+            <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="frMove"/>
+            <Anchor point="LEFT" relativeTo="frMove"/>
+          </Anchors>
+          <NormalImage File="tz_010" Source="309,484,21,20"/>
+          <HighlightImage File="tz_010" Source="309,484,21,20"/>
+          <PushedImage File="tz_010" Source="309,484,21,20"/>
+          <Hint Text="$L:995$"/>
+        </Button>
+      </Form>
+      <EditBox AutoScrollV="true" BackgroundColor="#00000000" EnableInput="false" Inherit="" Location="0,0,10,10" Name="ebDisplay0" Show="true" Size="0,0" WordWrap="true">
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+          <Anchor offset="0,-20" point="BOTTOM"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frChaButtonList"/>
+        </Anchors>
+      </EditBox>
+      <EditBox AutoScrollV="true" BackgroundColor="#00000000" EnableInput="false" Inherit="" Location="0,0,10,10" Name="ebDisplay1" Show="true" Size="0,0" WordWrap="true">
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+          <Anchor offset="0,-20" point="BOTTOM"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frChaButtonList"/>
+        </Anchors>
+      </EditBox>
+      <EditBox AutoScrollV="true" BackgroundColor="#00000000" EnableInput="false" Inherit="" Location="0,0,10,10" Name="ebDisplay2" Show="true" Size="0,0" WordWrap="true">
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+          <Anchor offset="0,-20" point="BOTTOM"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frChaButtonList"/>
+        </Anchors>
+      </EditBox>
+      <EditBox AutoScrollV="true" BackgroundColor="#00000000" EnableInput="false" Inherit="" Location="0,0,10,10" Name="ebDisplay3" Show="true" Size="0,0" WordWrap="true">
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+          <Anchor offset="0,-20" point="BOTTOM"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frChaButtonList"/>
+        </Anchors>
+      </EditBox>
+      <EditBox AutoScrollV="true" BackgroundColor="#000000" EnableInput="false" Inherit="" Location="0,0,10,10" Name="ebDisplay4" Show="fals" Size="0,0" WordWrap="true">
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+          <Anchor offset="0,-20" point="BOTTOM"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frChaButtonList"/>
+        </Anchors>
+      </EditBox>
+      <EditBox AutoScrollV="true" BackgroundColor="#000000" EnableInput="false" Inherit="" Location="0,0,10,10" Name="ebDisplay5" Show="fals" Size="0,0" WordWrap="true">
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+          <Anchor offset="0,-20" point="BOTTOM"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frChaButtonList"/>
+        </Anchors>
+      </EditBox>
+      <Anchors>
+        <Anchor offset="0,-125" point="BOTTOM"/>
+      </Anchors>
+      <CheckButton Inherit="" Location="0,0,54,20" Name="History0" Show="true" Size="54,20" Text="history1">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="frChaButtonList"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="0,0,20,20" Name="History1" Show="true" Size="54,20" Text="history2">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="History0"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="0,0,20,20" Name="History2" Show="true" Size="54,20" Text="history3">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="History1"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="199,140,54,20" Name="History3" Show="true" Size="54,20" Text="history4">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="History2"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="248,140,54,20" Name="History4" Show="false" Size="54,20" Text="history5">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="History3"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+      </CheckButton>
+      <CheckButton Inherit="" Location="248,140,54,20" Name="History5" Show="true" Size="54,20" Text="history6">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="History3"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+        <NormalImage File="tz_012" Source="440,293,64,20"/>
+        <CheckImage File="tz_012" Source="368,293,64,20"/>
+      </CheckButton>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="0,546,112,232" Name="frChannelFilter" Show="false" Size="140,328">
+      <Label Inherit="bg3" Location="0,0,140,326" Name="1034" Show="true"/>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Location="6,113,130,20" Name="ckbWorld" Show="true" Text="$L:252$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Location="6,134,130,20" Name="ckbDeal" Show="true" Text="$L:253$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Location="6,155,130,20" Name="ckbParty" Show="true" Text="$L:254$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,173,130,20" Name="ckbPrivy" Show="true" Text="$L:255$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,194,130,20" Name="ckbShout" Show="true" Text="$L:256$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,215,130,20" Name="ckbGuild" Show="true" Text="$L:257$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,236,130,20" Name="ckbTeam" Show="true" Text="$L:258$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,257,130,20" Name="ckbGeneral" Show="true" Text="$L:259$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,278,130,20" Name="ckbSystem" Show="true" Text="$L:filter_system_channel$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,92,130,20" Name="ckbOwnParty" Show="true" Text="$L:1018$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,20"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,71,130,20" Name="ckbMasterParty" Show="true" Text="$L:1019$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,22"/>
+        <CheckImage File="tz_012" Source="82,6,24,20"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,50,130,20" Name="ckbRumor" Show="true" Text="$L:1020$">
+        <CheckDisabledImage File="tz_012" Source="120,6,24,22"/>
+        <CheckImage File="tz_012" Source="82,6,24,22"/>
+      </CheckButton>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,29,130,20" Name="ckbFindTeam" Show="true" Text="$L:1026$">
+        <CheckImage File="tz_012" Source="82,6,24,22"/>
+        <CheckDisabledImage File="tz_012" Source="120,6,24,22"/>
+      </CheckButton>
+      <Anchors>
+        <Anchor point="BOTTOM" relativeTo="frMove.frChaButtonList.btChannel"/>
+        <Anchor offset="35,0" point="LEFT" relativeTo="frMove"/>
+      </Anchors>
+      <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="6,6,60,20" Name="title" Show="true" Text="$L:260$" TextColor="#FF8F8FFF" TextFont="$L:1$" TextSize="$L:2$"/>
+      <CheckButton AlignCol="LEFT" CheckStyle="true" Inherit="" Location="6,300,130,20" Name="ckbFriend" Show="true" Text="$L:1164$">
+        <CheckImage File="tz_012" Source="82,6,24,22"/>
+        <CheckDisabledImage File="tz_012" Source="120,6,24,22"/>
+      </CheckButton>
+    </Form>
+    <Form Active="true" Inherit="NoTitleBarForm" Location="0,0,564,28" Name="frChat" Show="fals" Size="564,28">
+      <Label Inherit="bg3" Location="0,0,24,28" MouseEvent="false" Name="lbChaLeft" Show="true">
+        <BackgroundImage Blend="true" File="" Source="0,190,24,28"/>
+      </Label>
+      <Label Inherit="bg3" Location="512,2,24,28" Name="lbChaRight" Show="true" Size="24,28">
+        <BackgroundImage File="" Source=""/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Label>
+      <Label Inherit="bg3" Location="24,0,232,28" Name="lbChaMiddle" Show="fals" Size="0,28">
+        <Anchors>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lbChaLeft"/>
+          <Anchor point="TOP"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="lbChaRight"/>
+        </Anchors>
+      </Label>
+      <Button Inherit="" Location="544,5,16,16" Name="btCartoon" Show="true" Size="16,16">
+        <NormalImage Blend="true" File="tz_010" Source="345,434,25,24"/>
+        <HighlightImage Blend="true" File="tz_010" Source="345,434,25,24"/>
+        <PushedImage Blend="true" File="tz_010" Source="345,434,25,24"/>
+        <Hint Text="$L:261$"/>
+        <Anchors>
+          <Anchor offset="-4,0" point="RIGHT"/>
+          <Anchor offset="0,5" point="TOP"/>
+        </Anchors>
+      </Button>
+      <Label BackgroundColor="#8F000000" Inherit="" Location="29,4,50,20" Name="lbInputPrefix" Show="true"/>
+      <EditBox AutoScrollV="false" BackgroundColor="#8F000000" EnableInput="true" Inherit="" Location="24,3,318,20" Name="ebInput" Show="fals" Size="0,20">
+        <Anchors>
+          <Anchor offset="1,0" point="LEFT" relativePoint="RIGHT" relativeTo="lbInputPrefix"/>
+          <Anchor offset="0,4" point="TOP"/>
+          <Anchor offset="-24,0" point="RIGHT"/>
+        </Anchors>
+      </EditBox>
+      <Button Active="false" Inherit="" Location="2,3,21,20" Name="btChannel" Show="true" Size="21,20" Text="">
+        <NormalImage File="tz_011" Source="482,220,21,20"/>
+        <PushedImage File="tz_011" Source="450,220,21,20"/>
+      </Button>
+      <Anchors>
+        <Anchor offset="0,4" point="TOP" relativePoint="BOTTOM" relativeTo="frMove"/>
+        <Anchor point="LEFT" relativeTo="frMove"/>
+      </Anchors>
+    </Form>
+    <Form Active="false" Inherit="NoTitleBarForm" Location="34,624,100,222" Name="frChannel" Show="false" Size="130,245">
+      <Widget Inherit="bg3" Location="0,0,130,245" Name="wgtBox" Show="true"/>
+      <Label Inherit="" Location="6,8,124,20" Name="channel" Show="true" Text="$L:1029$" TextColor="#FF8F8FFF" TextFont="$L:1$" TextSize="$L:2$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,102,100,20" Name="btWorld" Show="true" Text="$L:262$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,120,100,20" Name="btPrivy" Show="true" Text="$L:265$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,140,100,20" Name="btShout" Show="true" Text="$L:266$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,160,100,20" Name="btGuild" Show="true" Text="$L:267$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,180,100,20" Name="btTeam" Show="true" Text="$L:268$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,200,100,20" Name="btGeneral" Show="true" Text="$L:269$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,84,100,20" Name="btOwnParty" Show="true" Text="$L:1018$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,66,100,20" Name="btMasterParty" Show="true" Text="$L:1019$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,48,100,20" Name="btRumor" Show="true" Text="$L:1020$"/>
+      <Button AlignCol="LEFT" Inherit="" Location="8,30,100,20" Name="btFindTeam" Show="true" Text="$L:1026$"/>
+      <Anchors>
+        <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="frChat"/>
+        <Anchor offset="25,0" point="LEFT" relativeTo="frChat"/>
+      </Anchors>
+      <Button AlignCol="LEFT" Inherit="" Location="8,220,100,20" Name="btFriend" Show="true" Text="$L:1164$"/>
+    </Form>
+    <Form Inherit="NoTitleBarForm" Location="242,488,256,96" Name="frComic" Show="false" Size="192,160">
+      <Anchors>
+        <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="layWorld.frChat"/>
+        <Anchor point="RIGHT" relativeTo="layWorld.frChat"/>
+      </Anchors>
+    </Form>
+    <Form Active="false" BackgroundColor="#8F000000" Inherit="" Location="394,642,240,200" Name="frItemHint" Pick="false" Show="false" Size="240,200">
+      <Label BackgroundColor="#ee000000" Inherit="bg3" Location="0,0,240,200" Name="845" Show="true" Size="0,0">
+        <Anchors>
+          <Anchor point="TOP"/>
+          <Anchor point="BOTTOM"/>
+          <Anchor point="LEFT"/>
+          <Anchor point="RIGHT"/>
+        </Anchors>
+      </Label>
+      <EditBox AutoScrollV="false" BackgroundColor="#00000000" EnableInput="false" Inherit="" Location="0,0,10,10" Name="ebDisplay" Show="true" Size="0,0" WordWrap="true">
+        <Anchors>
+          <Anchor offset="-6,0" point="RIGHT"/>
+          <Anchor offset="0,20" point="TOP"/>
+          <Anchor offset="0,-6" point="BOTTOM"/>
+          <Anchor offset="6,0" point="LEFT"/>
+        </Anchors>
+      </EditBox>
+      <Anchors>
+        <Anchor offset="20,0" point="LEFT" relativePoint="RIGHT" relativeTo="layWorld.frMove"/>
+        <Anchor point="BOTTOM" relativeTo="layWorld.frMove"/>
+      </Anchors>
+      <TitleBarButton Location="0,1,240,20" Show="show"/>
+      <CloseButton Location="221,3,13,13" Show="true" Size="13,13">
+        <NormalImage File="tz_010" Source="120,383,13,13"/>
+        <PushedImage File="tz_010" Source="98,383,13,13"/>
+        <Anchors>
+          <Anchor offset="0,8" point="TOP"/>
+          <Anchor offset="-8,0" point="RIGHT"/>
+        </Anchors>
+      </CloseButton>
+    </Form>
+    <Label AlignCol="CENTER" AlignLine="CENTER" HandleMove="true" Inherit="" Location="427,413,80,24" MouseEvent="true" MouseMove="true" Name="lbSysInfoMove" Show="true" Size="80,24" Text="$L:1059$">
+      <BackgroundImage File="tz_010" Source="315,196,92,24"/>
+    </Label>
+    <Label BackgroundColor="#ee000000" Inherit="" Location="628,300,176,12" MouseEvent="true" MouseMove="true" Name="lbExtendSysInfo" Show="true" Size="176,12">
+      <Anchors>
+        <Anchor offset="0,0" point="LEFT" relativePoint="RIGHT" relativeTo="lbSysInfoMove"/>
+        <Anchor offset="0,0" point="BOTTOM" relativePoint="BOTTOM" relativeTo="lbSysInfoMove"/>
+      </Anchors>
+    </Label>
+    <Label BackgroundColor="#8F000000" ClipChildren="false" Inherit="" Location="547,344,256,168" MouseEvent="false" MouseMove="false" Name="lbSysInfo" Show="true" Size="256,168">
+      <Anchors>
+        <Anchor offset="0,0" point="TOP" relativePoint="BOTTOM" relativeTo="lbExtendSysInfo"/>
+        <Anchor offset="0,0" point="RIGHT" relativePoint="RIGHT" relativeTo="lbExtendSysInfo"/>
+      </Anchors>
+    </Label>
+    <EditBox EnableInput="false" Inherit="" Location="545,374,258,168" MouseEvent="true" MouseMove="true" Name="edbGameInfo" Show="true" Size="258,168" WordWrap="true">
+      <Anchors>
+        <Anchor offset="0,0" point="TOP" relativePoint="BOTTOM" relativeTo="lbExtendSysInfo"/>
+        <Anchor offset="0,0" point="RIGHT" relativePoint="RIGHT" relativeTo="lbExtendSysInfo"/>
+      </Anchors>
+    </EditBox>
+    <ScrollBarV Inherit="DefaultSbv" Location="256,1,16,152" MouseEvent="true" MouseMove="true" Name="SBGameInfo" Show="true" Size="16,152">
+      <Anchors>
+        <Anchor offset="0,0" point="TOP" relativePoint="TOP" relativeTo="edbGameInfo"/>
+        <Anchor offset="0,0" point="LEFT" relativePoint="RIGHT" relativeTo="edbGameInfo"/>
+      </Anchors>
+    </ScrollBarV>
+    <Button Inherit="" Location="257,153,16,16" Name="btGameInfoRoll" Show="true" Size="16,16">
+      <NormalImage Blend="true" File="tz_010" Source="71,421,21,20"/>
+      <PushedImage Blend="true" File="tz_010" Source="209,484,21,20"/>
+      <Hint Text="$L:251$"/>
+      <Anchors>
+        <Anchor offset="0,0" point="BOTTOM" relativePoint="BOTTOM" relativeTo="edbGameInfo"/>
+        <Anchor offset="0,0" point="LEFT" relativePoint="RIGHT" relativeTo="edbGameInfo"/>
+      </Anchors>
+    </Button>
+  </Layer>
+  <Layer Name="layTop" Show="true">
+    <Label AlignCol="CENTER" FadeOutTime="2" Inherit="" Location="348,167,70,18" Name="lbCenterMsg1" Show="true" Size="700,24" Text="" TextFont="$L:1$" TextSize="$L:4$">
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor offset="0,100" point="TOP"/>
+      </Anchors>
+    </Label>
+    <Label AlignCol="CENTER" FadeOutTime="2" Inherit="" Location="348,167,70,18" Name="lbCenterMsg2" Show="true" Size="700,24" Text="" TextFont="$L:1$" TextSize="$L:4$">
+      <Anchors>
+        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lbCenterMsg1"/>
+        <Anchor point="CENTERH"/>
+      </Anchors>
+    </Label>
+    <Label AlignCol="CENTER" FadeOutTime="2" Inherit="" Location="348,167,70,18" Name="lbCenterMsg3" Show="true" Size="700,24" Text="" TextFont="$L:1$" TextSize="$L:4$">
+      <Anchors>
+        <Anchor point="CENTERH"/>
+        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lbCenterMsg2"/>
+      </Anchors>
+    </Label>
+  </Layer>
+</Ui>
