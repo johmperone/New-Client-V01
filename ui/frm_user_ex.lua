@@ -337,13 +337,16 @@ function layWorld_frmAllEx_modelSelf_Refresh(self)
 	if self == nil then self = uiGetglobal("layWorld.frmAllEx.modelSelf") end
 	local name, party = uiGetMyInfo("Role"); 
 	if party == EV_PARTY_FM then 
-		self:SetCameraEye(0, -140, 20, true); 
+		self:SetCameraEye(0, -140, 20, true);
+		self:SetCameraUp(0, 0, 2);
+		self:SetCameraLookAt(0, 0, 25);
 	else 
 		self:SetCameraEye(0, -110, 20, true);
+		self:SetCameraUp(0, 0, 5);
+		self:SetCameraLookAt(0, 0, 20);
 	end
 	
-	self:SetCameraLookAt(0, 0, 25);
-	self:SetCameraUp(0, 0, 2);
+	
 	local model = uiItemGetCurModel();
 	local head, hair = uiItemGetCurAppearance();
 	self:SetModel(uiItemGetCurModel());

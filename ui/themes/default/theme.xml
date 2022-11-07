@@ -189,6 +189,91 @@
     </Widgets>
   </Widget>
 
+<Widget Inherit="" Location="222,134,200,200" Name="bg11" Show="false" Pick="false">
+    <Widgets>
+      <Widget Inherit="" Location="0,0,171,51" Name="lt" Show="true" Size="171,51" Pick="false" Level="0">
+        <BackgroundImage File="calipso_template2" Source="282,1,171,51"/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="0,0,20,51" Name="rt" Show="true" Size="20,51" Pick="false" Level="0">
+        <BackgroundImage File="calipso_template2" Source="458,1,20,51"/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="TOP"/>
+        </Anchors>
+      </Widget>
+	  
+      <Widget Inherit="" Location="0,0,171,48" Name="lb" Show="true" Size="171,48" Pick="false" Level="0">
+        <!--BackgroundImage File="calipso_template" Source="222,0,119,182"/-->
+		<BackgroundImage File="calipso_template2" Source="282,57,171,48"/>
+        <Anchors>
+          <Anchor point="LEFT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+
+
+      <Widget Inherit="" Location="0,0,20,48" Name="rb" Show="true" Size="20,48" Pick="false" Level="0">
+        <BackgroundImage File="calipso_template2" Source="458,57,20,48"/>
+        <Anchors>
+          <Anchor point="RIGHT"/>
+          <Anchor point="BOTTOM"/>
+        </Anchors>
+      </Widget>
+
+
+      <Widget Inherit="" Location="0,0,171,3" Name="l" Show="true"  Pick="false" Level="0">
+        <BackgroundImage File="calipso_template2"  Source="282,53,171,3"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="lt"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="lt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="0,0,20,3" Name="r" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="calipso_template2"  Source="458,53,20,3"/>
+        <Anchors>
+          <Anchor point="LEFT" relativeTo="rt"/>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="rb"/>
+          <Anchor point="RIGHT" relativeTo="rt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="0,0,3,51" Name="t" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="calipso_template2" Source="454,1,3,51"/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lt"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lt"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rt"/>
+          <Anchor point="BOTTOM" relativeTo="lt"/>
+        </Anchors>
+      </Widget>
+      <Widget Inherit="" Location="0,0,3,48" Name="b" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="calipso_template2" Source="454,57,3,48"/>
+        <Anchors>
+          <Anchor point="TOP" relativeTo="lb"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="lb"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="rb"/>
+          <Anchor point="BOTTOM" relativeTo="lb"/>
+        </Anchors>
+      </Widget>
+      <Widget BackgroundColor="" Name="center" Show="true" Pick="false" Level="0">
+        <BackgroundImage File="calipso_template2" Source="454,53,3,3" />
+        <Anchors>
+          <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="t"/>
+          <Anchor point="LEFT" relativePoint="RIGHT" relativeTo="l"/>
+          <Anchor point="RIGHT" relativePoint="LEFT" relativeTo="r"/>
+          <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="b"/>
+        </Anchors>
+      </Widget>
+    </Widgets>
+  </Widget>
+
+
 <Widget Inherit="" Location="222,134,200,200" Name="bg1" Show="false" Pick="false">
     <Widgets>
       <Widget Inherit="" Location="81,79,8,8" Name="lt" Show="true" Size="8,8" Pick="false" Level="0">

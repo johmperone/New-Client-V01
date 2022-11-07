@@ -152,7 +152,14 @@
         <PushedImage File="tz_010" Source="98,383,13,13"/>
       </CloseButton>
       
-      <Form Inherit="NoTitleBarForm" Location="50,145,346,348" Name="frmUser" Show="true">
+      <Form Inherit="NoTitleBarForm" Location="33,85,380,485" Name="frmUser" Show="true">
+
+        
+<!-- background Character -->
+        <Label Inherit="bg11" Location="5,5,370,475" Name="backgroundStatus" Show="fals">
+          <BackgroundImage File="" Source=""/>
+        </Label>
+
         <TitleBarButton Location="3,4,250,20" Text="$L:102$"/>
         <CloseButton Location="220,3,14,15">
           <NormalImage File="" Source=""/>
@@ -165,21 +172,72 @@
           <NormalImage File="" Source=""/>
           <PushedImage File="" Source=""/>
         </CloseButton>
-        <Label Inherit="bg3" Location="12,30,316,90" Name="24960" Show="true"/>
-        <Label Inherit="bg3" Location="12,150,316,52" Name="25845" Show="true"/>
-        <Label Inherit="bg3" Location="167,233,168,114" Name="26316" Show="true"/>
-        <Label Inherit="bg3" Location="12,233,150,114" Name="26670" Show="true"/>
-        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="12,5,147,24" Name="labCharName" Show="true" Text="" TextColor="">
-          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        <Label Inherit="bg3" Location="12,30,316,90" Name="24960" Show="false"/>
+        <Label Inherit="bg3" Location="12,150,316,52" Name="25845" Show="false"/>
+        <Label Inherit="bg3" Location="167,233,168,114" Name="26316" Show="false"/>
+        <!-- background class status -->
+        <Label Inherit="" Location="5,5,395,150" Name="26670" Show="true">
+        <BackgroundImage File="27761" Source="0,0,445,150"/>
         </Label>
-        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="179,5,147,24" Name="labCharFaction" Show="true" Text="$L:104$" TextColor="">
-          <BackgroundImage File="tz_010" Source="181,351,147,24"/>
+        <!-- img class user -->
+        <!-- Wizard -->
+        <Button Inherit="" AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="41,13,100,100" Name="btCharFaction2" Show="true">
+              <!--BackgroundImage File="bkgclass.tga" Source="0,0,260,260"/-->       
+                      
+                      <NormalImage File="wizard"/>
+            <HighlightImage File="wizard1"/>
+            <PushedImage File="wizard2"/>
+            <Hint Text="$L:270$"/>
+          <Scripts>
+            <OnLoad>self:RegisterScriptEventNotify("EVENT_SelfEnterWorld");</OnLoad>
+            <OnEvent>local name, party = uiGetMyInfo("Role"); if party == EV_PARTY_EM then self:Show() else self:Hide() end</OnEvent>
+          </Scripts>
+        </Button>
+        <!-- Assassin -->
+        <Label Inherit="" AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="40,13,100,100" Name="btCharFaction3" Show="true">
+          <BackgroundImage File="sin"/>
+          <Scripts>
+            <OnLoad>self:RegisterScriptEventNotify("EVENT_SelfEnterWorld");</OnLoad>
+            <OnEvent>local name, party = uiGetMyInfo("Role"); if party == EV_PARTY_QC then self:Show() else self:Hide() end</OnEvent>
+          </Scripts>
         </Label>
-        <Label Inherit="" Location="26,40,68,18" Name="696" Show="true" Text="$L:105$"/>
-        <Label Inherit="" Location="26,57,68,18" Name="735" Show="true" Text="$L:106$"/>
-        <Label Inherit="" Location="26,74,68,18" Name="745" Show="true" Text="$L:107$"/>
-        <Label Inherit="" Location="26,91,55,18" Name="756" Show="true" Text="$L:108$"/>
-        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="12,123,147,24" Name="btnBaseAttrib" Show="true" Text="$L:109$" TextColor="">
+        <!-- Fairy -->
+        <Label Inherit="" AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="40,13,100,100" Name="btCharFaction4" Show="true">
+          <BackgroundImage File="fairy"/>
+          <Scripts>
+            <OnLoad>self:RegisterScriptEventNotify("EVENT_SelfEnterWorld");</OnLoad>
+            <OnEvent>local name, party = uiGetMyInfo("Role"); if party == EV_PARTY_BH then self:Show() else self:Hide() end</OnEvent>
+          </Scripts>
+        </Label>
+        <!-- Tamer -->
+        <Label Inherit="" AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="40,13,100,100" Name="btCharFaction" Show="true">
+          <BackgroundImage File="tamer"/>
+          <Scripts>
+            <OnLoad>self:RegisterScriptEventNotify("EVENT_SelfEnterWorld");</OnLoad>
+            <OnEvent>local name, party = uiGetMyInfo("Role"); if party == EV_PARTY_XQ then self:Show() else self:Hide() end</OnEvent>
+          </Scripts>
+        </Label>
+        <!-- Monk -->
+        <Label Inherit="" AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="40,13,100,100" Name="btCharFaction1" Show="true">
+          <BackgroundImage File="Monk"/>
+          <Scripts>
+            <OnLoad>self:RegisterScriptEventNotify("EVENT_SelfEnterWorld");</OnLoad>
+            <OnEvent>local name, party = uiGetMyInfo("Role"); if party == EV_PARTY_FM then self:Show() else self:Hide() end</OnEvent>
+          </Scripts>
+        </Label>
+        <!-- text class user -->
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="16,95,147,24" Name="labCharFaction" Show="true" Text="$L:104$">
+          <!--BackgroundImage File="calipso_template2" Source="1,261,33,18"/-->
+        </Label>
+        <!-- Name Character -->
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="" Location="14,120,147,24" Name="labCharName" Show="true" TextColor="#FFFFF295" TextFont="$L:1$" TextSize="$L:2$" Text="$L:104$">
+          <!--BackgroundImage File="calipso_template2" Source="1,461,132,23"/-->
+        </Label>
+        <Label Inherit="" Location="26,40,68,18" Name="696" Show="false" Text="$L:105$"/>
+        <Label Inherit="" Location="26,57,68,18" Name="735" Show="false" Text="$L:106$"/>
+        <Label Inherit="" Location="26,74,68,18" Name="745" Show="false" Text="$L:107$"/>
+        <Label Inherit="" Location="26,91,55,18" Name="756" Show="false" Text="$L:108$"/>
+        <Label AlignCol="CENTER" AlignLine="CENTER" Inherit="PushButton" Location="12,123,147,24" Name="btnBaseAttrib" Show="false" Text="$L:109$" TextColor="">
           <BackgroundImage File="tz_010" Source="181,351,147,24"/>
         </Label>
         <Label Inherit="" Location="22,156,76,18" MouseEvent="true" MouseMove="true" Name="labStrDesc" Show="true" Text="$L:110$" TextColor="">
@@ -206,25 +264,25 @@
           </Scripts>
           <Hint/>
         </Label>
-        <Label Inherit="" Location="102,156,50,18" MouseEvent="true" MouseMove="true" Name="labStr" Show="true" Text="$L:114$" TextColor="">
+        <Label Inherit="" Location="102,156,50,18" MouseEvent="true" MouseMove="true" Name="labStr" Show="false" Text="$L:114$" TextColor="">
           <Scripts>
             <OnHint>layWorld_frmAllEx_SetHint(self,"Str")</OnHint>
           </Scripts>
           <Hint/>
         </Label>
-        <Label Inherit="" Location="249,155,50,18" MouseEvent="true" MouseMove="true" Name="labDex" Show="true" Text="$L:115$" TextColor="">
+        <Label Inherit="" Location="249,155,50,18" MouseEvent="true" MouseMove="true" Name="labDex" Show="false" Text="$L:115$" TextColor="">
           <Scripts>
             <OnHint>layWorld_frmAllEx_SetHint(self,"Dex")</OnHint>
           </Scripts>
           <Hint/>
         </Label>
-        <Label Inherit="" Location="102,177,50,18" MouseEvent="true" MouseMove="true" Name="labWit" Show="true" Text="$L:116$" TextColor="">
+        <Label Inherit="" Location="102,177,50,18" MouseEvent="true" MouseMove="true" Name="labWit" Show="false" Text="$L:116$" TextColor="">
           <Scripts>
             <OnHint>layWorld_frmAllEx_SetHint(self,"Wit")</OnHint>
           </Scripts>
           <Hint/>
         </Label>
-        <Label Inherit="" Location="249,176,50,18" MouseEvent="true" MouseMove="true" Name="labCon" Show="true" Text="$L:117$" TextColor="">
+        <Label Inherit="" Location="249,176,50,18" MouseEvent="true" MouseMove="true" Name="labCon" Show="false" Text="$L:117$" TextColor="">
           <Scripts>
             <OnHint>layWorld_frmAllEx_SetHint(self,"Con")</OnHint>
           </Scripts>
@@ -301,26 +359,23 @@
           </Scripts>
           <Hint/>
         </Label>
-        <Label Inherit="" Location="97,45,200,8" Name="lbLEVbar" Show="true">
-          <BackgroundImage File="tz_010" Source="240,403,116,8"/>
-        </Label>
-        <Label Inherit="" Location="97,62,200,8" Name="lbHpbar" Show="true">
+        <Label Inherit="" Location="97,62,200,8" Name="lbHpbar" Show="false">
           <BackgroundImage File="tz_010" Source="240,383,116,8"/>
         </Label>
-        <Label Inherit="" Location="97,78,200,8" Name="lbMPbar" Show="true">
+        <Label Inherit="" Location="97,78,200,8" Name="lbMPbar" Show="false">
           <BackgroundImage File="tz_010" Source="240,394,115,8"/>
         </Label>
-        <ProgressBar Inherit="" Location="97,45,200,8" Name="pgbExp" Show="fals" Text="$L:140$">
-          <ProgressBarImage File="tz_010" Source="106,465,228,13"/>
+        <!-- Lv cap -->
+        <ProgressBar Inherit="" Location="40,155,100,8" Name="pgbExp" Show="true" Text="$L:140$" TextColor="#FFFFF295" TextSize="$L:1$">
         </ProgressBar>
-        <ProgressBar Inherit="" Location="97,62,200,8" Name="pgbHp" Show="true" Text="$L:141$">
+        <ProgressBar Inherit="" Location="97,62,200,8" Name="pgbHp" Show="false" Text="$L:141$">
           <ProgressBarImage File="tz_010" Source="380,383,116,8"/>
         </ProgressBar>
-        <ProgressBar Inherit="" Location="97,78,200,8" Name="pgbNimbus" Show="fals" Text="$L:142$">
+        <ProgressBar Inherit="" Location="97,78,200,8" Name="pgbNimbus" Show="false" Text="$L:142$">
           <ProgressBarImage File="tz_010" Source="105,439,228,13"/>
         </ProgressBar>
-        <Label Inherit="" Location="81,91,40,18" Name="labPkValue" Show="true" Text="$L:143$"/>
-        <Label Inherit="" Location="20,240,66,18" Name="labPhyDmgDesc" Show="true" Text="$L:119$" TextColor=""/>
+        <Label Inherit="" Location="81,91,40,18" Name="labPkValue" Show="false" Text="$L:143$"/>
+        <Label Inherit="" Location="20,240,66,18" Name="labPhyDmgDesc" Show="false" Text="$L:119$" TextColor=""/>
         <Label Inherit="" Location="20,289,66,18" MouseEvent="true" MouseMove="true" Name="labZhaoJiaRateDesc" Show="true" Text="$L:120$" TextColor="">
           <Scripts>
             <OnHint>layWorld_frmAllEx_SetHint(self,"Parry")</OnHint>
@@ -375,11 +430,11 @@
           </Scripts>
           <Hint/>
         </Label>
-        <Label Inherit="" Location="88,257,66,18" Name="labPhyDmgDesc2" Show="true" Text="" TextColor=""/>
-        <Label AlignCol="CENTER" Inherit="" Location="231,91,55,18" Name="728" Show="true" Text="$L:923$"/>
+        <Label Inherit="" Location="88,257,66,18" Name="labPhyDmgDesc2" Show="false" Text="" TextColor=""/>
+        <Label AlignCol="CENTER" Inherit="" Location="231,91,55,18" Name="728" Show="false" Text="$L:923$"/>
         <Label Inherit="" Location="286,91,30,18" Name="962" Show="true" Text="$L:925$"/>
-        <Label AlignCol="CENTER" Inherit="" Location="127,91,60,18" Name="labFatigueName" Show="true" Text="$L:1181$"/>
-        <Label Inherit="" Location="187,91,40,18" Name="labFatigue" Show="true" Text=""/>
+        <Label AlignCol="CENTER" Inherit="" Location="127,91,60,18" Name="labFatigueName" Show="false" Text="$L:1181$"/>
+        <Label Inherit="" Location="187,91,40,18" Name="labFatigue" Show="false" Text=""/>
       </Form>
       <Form Inherit="NoTitleBarForm" Location="31,93,350,345" Name="frmGod" Show="false">
         <Label Inherit="bg3" Location="10,146,335,95" Name="2526" Show="true"/>
